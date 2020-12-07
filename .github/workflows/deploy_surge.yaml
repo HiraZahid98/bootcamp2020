@@ -1,5 +1,5 @@
 ---
-name: Deploy Website witj Surge
+name: Deploy Website with Surge
 
 on: 
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Job_Deploy_Surge
-    runs-ok: Windows_latest
+    runs-on: Windows_latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node
